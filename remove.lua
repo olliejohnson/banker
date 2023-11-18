@@ -1,0 +1,6 @@
+fs.delete("/calls/")
+fs.delete("/startup.lua")
+fs.delete("/instmgr.lua")
+fs.delete("/install.lua")
+fs.delete("/remove.lua")
+os.reboot()
