@@ -2,8 +2,8 @@ repo = "https://raw.githubusercontent.com/olliejohnson/banker/main/"
 
 function getFile(file)
     local data = http.get(repo..file).readAll()
-    local file = fs.open(file, "w")
-    file.write("/disk/"..data)
+    local file = fs.open("/disk/"..file, "w")
+    file.write(data)
     file.close()
 end
 
