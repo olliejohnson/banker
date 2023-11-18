@@ -1,6 +1,7 @@
 fs.delete("/startup.lua")
 fs.copy("disk/install_media/startup.lua", "/startup.lua")
 fs.copy("disk/install_media/calls/", "/calls/")
+fs.move("disk/disabled.startup.lua", "startup.lua")
 disk.eject("top")
 disk.eject("left")
 disk.eject("right")
