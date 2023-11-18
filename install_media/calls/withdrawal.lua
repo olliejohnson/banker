@@ -1,5 +1,4 @@
-host = "http://matrix.oliverj.io:8000"
-term.clear()
+host = "http://localhost:8000"
 term.setCursorPos(1,1)
 term.write("Enter Account Name: ")
 local name = read()

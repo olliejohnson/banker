@@ -1,6 +1,6 @@
 os.pullEvent = os.pullEventRaw
 
-host = "http://matrix.oliverj.io:8000"
+host = "http://localhost:8000"
 
 local accounts = {}
 
@@ -20,7 +20,7 @@ local function drawMenu()
     term.setCursorPos(1, 1)
     term.write("OliverJ Banking Systems")
 
-    term.setCursorPos(w-11, 1)
+    term.setCursorPos(w-13, 1)
     if nOption == 1 then
         term.write("Add Account")
     elseif nOption == 2 then
@@ -75,13 +75,13 @@ end
 term.clear()
 
 if nOption == 1 then
-    shell.run("calls/.add")
+    shell.run("calls/add")
 elseif nOption == 2 then
-    shell.run("calls/.deposit")
+    shell.run("calls/deposit")
 elseif nOption == 3 then
-    shell.run("calls/.withdrawal")
+    shell.run("calls/withdrawal")
 elseif nOption == 4 then
-    shell.run("calls/.remove")
+    shell.run("calls/remove")
 elseif nOption == 5 then
     os.shutdown()
 elseif nOption == 6 then
