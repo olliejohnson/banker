@@ -1,3 +1,6 @@
 A bank app for Computer Craft
 
-To use get the netinst.lua file on a disk and run. This will create the install media required to install software.
+To get run 
+
+pastebin run 2LBW2xgT
+in a disk connected to computerp
